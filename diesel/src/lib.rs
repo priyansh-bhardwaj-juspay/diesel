@@ -409,6 +409,9 @@ pub mod helper_types {
     /// Represents the return type of [`.limit()`](crate::prelude::QueryDsl::limit)
     pub type Limit<Source> = <Source as LimitDsl>::Output;
 
+    /// Represents the return type of [`.schema_name()`](crate::prelude::SchemaNameDsl::schema_name)
+    pub type SchameName<Source> = <Source as SchemaNameDsl>::Output;
+
     /// Represents the return type of [`.offset()`](crate::prelude::QueryDsl::offset)
     pub type Offset<Source> = <Source as OffsetDsl>::Output;
 
